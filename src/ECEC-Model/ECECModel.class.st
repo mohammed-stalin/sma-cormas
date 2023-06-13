@@ -74,7 +74,7 @@ ECECModel >> numberOfUnrestrainedForagers [
 	^ self theUnrestrainedForagers size
 ]
 
-{ #category : #accessing }
+{ #category : #control }
 ECECModel >> step: anObject [
 
 	self
