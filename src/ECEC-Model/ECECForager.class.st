@@ -100,7 +100,7 @@ ECECForager >> move [
 		self randomWalkConstrainedBy: [ :c | c noOccupant ].
 		^ self ].
 	
-	maxBiomass := candidatePatches collect: [ :each | each biomass ].
+	maxBiomass := (candidatePatches collect: [ :each | each biomass ]) max.
 	targetPatch := candidatePatches detect: [ :each | each biomass = maxBiomass ].
 	
 	self moveTo: targetPatch.

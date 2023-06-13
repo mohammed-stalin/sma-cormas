@@ -8,6 +8,12 @@ Class {
 }
 
 { #category : #accessing }
+ECECVegetationUnit class >> entityName [
+
+	^ 'VegetationUnit'
+]
+
+{ #category : #accessing }
 ECECVegetationUnit class >> k [
 
 	^ 10 
@@ -77,7 +83,7 @@ ECECVegetationUnit >> povBiomass [
 	^ self
 		povAttribute: #biomass
 		min: 0
-		max: self class K
+		max: self class k
 		color: Color green
 ]
 
