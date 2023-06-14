@@ -1,4 +1,4 @@
-# ecec-model
+# ECEC Model
 
 [![CI](https://github.com/cormas/ecec-model/actions/workflows/test.yml/badge.svg)](https://github.com/cormas/ecec-model/actions/workflows/test.yml)
 [![Coverage Status](https://coveralls.io/repos/github/cormas/ecec-model/badge.svg?branch=main)](https://coveralls.io/github/cormas/ecec-model?branch=main)
