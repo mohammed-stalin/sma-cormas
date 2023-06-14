@@ -1,0 +1,18 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'ECECModel',
+      #directory : 'src',
+      #registerInIceberg : true,
+      #onWarningLog: true,
+      #onConflict : #useLoaded,
+      #load : [ 'default' ],
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'ECEC-Model' ]
+    }
+  }
+}
