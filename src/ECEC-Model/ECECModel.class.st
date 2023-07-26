@@ -9,6 +9,12 @@ Class {
 	#category : #'ECEC-Model'
 }
 
+{ #category : #'simulation settings' }
+ECECModel class >> defaultInit [
+
+	^ #homogeneousEnvironment
+]
+
 { #category : #accessing }
 ECECModel class >> initialNumberOfRestrainedForagers [
 
