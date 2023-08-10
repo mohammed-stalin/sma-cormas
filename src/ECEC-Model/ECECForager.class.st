@@ -88,10 +88,10 @@ ECECForager >> move [
 	patch ifNil: [ ^ self ].
 	
 	candidatePatches := self patch neighbourhoodAndSelf select: [ :each |
-		each biomass > self class catabolicRate and: [ each noOccupant ] ].
+		each biomass > self class catabolicRate and: [ each hasNoOccupants ] ].
 	
 	candidatePatches ifEmpty: [
-		self randomWalkConstrainedBy: [ :c | c noOccupant ].
+		self randomWalkConstrainedBy: [ :c | c hasNoOccupants ].
 		^ self ].
 	
 	maxBiomass := (candidatePatches collect: [ :each | each biomass ]) max.
