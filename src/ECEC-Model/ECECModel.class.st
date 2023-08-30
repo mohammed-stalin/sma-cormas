@@ -9,6 +9,21 @@ Class {
 	#category : #'ECEC-Model'
 }
 
+{ #category : #'- probes' }
+ECECModel class >> colorOfProbe_numberOfRestrainedForagers [
+  ^ (Color r: 0.05278592375366569 g: 0.0 b: 1.0 alpha: 1.0)
+]
+
+{ #category : #'- probes' }
+ECECModel class >> colorOfProbe_numberOfUnrestrainedForagers [
+  ^ (Color r: 1.0 g: 0.0 b: 0.0019550342130987292 alpha: 1.0)
+]
+
+{ #category : #'- probes' }
+ECECModel class >> colorOfProbe_totalAmountOfBiomass [
+  ^ (Color r: 0.21700879765395895 g: 1.0 b: 0.0 alpha: 1.0)
+]
+
 { #category : #'simulation settings' }
 ECECModel class >> defaultInit [
 
@@ -66,6 +81,19 @@ ECECModel >> initializeAgents [
 		randomlyLocatedAloneEntities: ECECUnrestrainedForager.
 ]
 
+{ #category : #init }
+ECECModel >> islandEnvironment [
+
+	| x y |
+	self homogeneousEnvironment.
+	
+	self theCells do: [ :cell |
+		x := cell coordinates x.
+		y := cell coordinates y.
+		
+		(x % 6 <= 2 and: [ y % 6 <= 2 ]) ifFalse: [ cell biomass: 0 ] ].
+]
+
 { #category : #probes }
 ECECModel >> numberOfRestrainedForagers [
 
@@ -78,6 +106,19 @@ ECECModel >> numberOfUnrestrainedForagers [
 
 	<probe>
 	^ self theUnrestrainedForagers size
+]
+
+{ #category : #init }
+ECECModel >> remoteIslandEnvironment [
+
+	| x y |
+	self homogeneousEnvironment.
+	
+	self theCells do: [ :cell |
+		x := cell coordinates x.
+		y := cell coordinates y.
+		
+		(x % 12 <= 3 and: [ y % 12 <= 3 ]) ifFalse: [ cell biomass: 0 ] ].
 ]
 
 { #category : #control }
