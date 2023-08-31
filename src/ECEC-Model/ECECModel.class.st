@@ -121,6 +121,30 @@ ECECModel >> remoteIslandEnvironment [
 		(x % 12 <= 3 and: [ y % 12 <= 3 ]) ifFalse: [ cell biomass: 0 ] ].
 ]
 
+{ #category : #init }
+ECECModel >> smallEnvironment [
+
+	self
+		createGridLines: 4
+		columns: 4
+		neighbourhood: 8
+		closed: false.
+		
+	self theVegetationUnits do: [ :each | each initializeWithRandomBiomass ].
+	
+	self
+		createN: 1
+		randomlyLocatedAloneEntities: ECECRestrainedForager.
+		
+	self
+		createN: 1
+		randomlyLocatedAloneEntities: ECECUnrestrainedForager.
+	
+	self
+		displayPov: #povBiomass of: ECECVegetationUnit;
+		displayPov: #defaultPOV of: ECECForager
+]
+
 { #category : #control }
 ECECModel >> step: anObject [
 
