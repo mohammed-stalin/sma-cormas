@@ -98,10 +98,10 @@ ECECVegetationUnit >> povBiomassForager [
 { #category : #pov }
 ECECVegetationUnit >> povForagersVision [
 
-	(self hasOccupantType: ECECForager)
+	(self hasOccupantsOfClass: ECECForager)
 		ifTrue: [ ^ self povBiomassForager ].
 	
-	(self neighbourhood anySatisfy: [ :each | each hasOccupantType: ECECForager ])
+	(self neighbourhood anySatisfy: [ :each | each hasOccupantsOfClass: ECECForager ])
 		ifTrue: [ ^ self povBiomassForager ].
 	
 	^ Color black
