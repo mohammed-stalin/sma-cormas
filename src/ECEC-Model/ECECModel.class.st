@@ -155,6 +155,7 @@ ECECModel >> step: anObject [
 
 { #category : #accessing }
 ECECModel >> theRestrainedForagers [
+	<getterFor: #ECECRestrainedForager>
 
 	^ theRestrainedForagers
 ]
@@ -167,6 +168,7 @@ ECECModel >> theRestrainedForagers: anObject [
 
 { #category : #accessing }
 ECECModel >> theUnrestrainedForagers [
+	<getterFor: #ECECUnrestrainedForager>
 
 	^ theUnrestrainedForagers
 ]
@@ -179,6 +181,7 @@ ECECModel >> theUnrestrainedForagers: anObject [
 
 { #category : #accessing }
 ECECModel >> theVegetationUnits [
+	<getterFor: #ECECVegetationUnit>
 
 	^ theVegetationUnits
 ]
