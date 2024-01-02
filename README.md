@@ -9,3 +9,10 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/cormas/ecec-model/master/LICENSE)
 
 ECEC Model implemented using Cormas platform
+
+```st
+Metacello new
+  baseline: 'ECECModel';
+  repository: 'github://cormas/ecec-model';
+  load.
+```
