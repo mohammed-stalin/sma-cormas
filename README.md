@@ -12,7 +12,9 @@ ECEC Model implemented using Cormas platform
 
 ```st
 Metacello new
+  onConflictUseLoaded;        
+  onWarningLog;
   baseline: 'ECECModel';
-  repository: 'github://cormas/ecec-model';
+  repository: 'github://cormas/ecec-model:main';
   load.
 ```
