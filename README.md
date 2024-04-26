@@ -1,5 +1,3 @@
-Sure, here's an example of a README file for GitHub:
-
 ---
 
 # Multi-Agent System Simulation
@@ -67,7 +65,7 @@ Smalltalk snapshot: true andQuit: true"
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any inquiries or questions regarding the project, feel free to contact [Your Name](mailto:your.email@example.com).
+For any inquiries or questions regarding the project, feel free to contact [Your Name](mohammed.achabi@etu.uae.ac.ma).
 
 ---
 Feel free to customize this template to fit your specific project needs!
