@@ -68,6 +68,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries or questions regarding the project, feel free to contact [Your Name](mohammed.achabi@etu.uae.ac.ma).
 
 ---
-Feel free to customize this template to fit your specific project needs!
+here there's a report of the project
 [rapport_SMA_MohammedAACHBI.docx](https://github.com/mohammed-stalin/sma-cormas/files/15131275/rapport_SMA_MohammedAACHBI.docx)
 [SMA_mohammedAACHABI_présentation.pptx](https://github.com/mohammed-stalin/sma-cormas/files/15131277/SMA_mohammedAACHABI_presentation.pptx)
